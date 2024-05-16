@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="webdite icon" type="png" href="IconeSite.png">
+    <link rel="stylesheet" href="contato.css">
+    <link rel="stylesheet" href="reset.css">
+    <title>🌟MSR - Contatos📞📱</title>
+</head>
+ 
+<body>
+    <img src="BackgroundTema.png" alt="" class="background_img" width="100%">
+
+    <header>
+        <div class="borda_div">
+            <div class="header_div">
+                <a href="index.html"><img src="logo circulo contornada.png" alt="logo" class ="logo_header"></a>
+
+                <nav>
+                    <ul>
+                        <li> <a href="index.html">Home </a></li>
+                        <li> <a href="produtos.html"> Produtos </a></li>
+                        <li> <a href="contatos.html">Contato </a></li>
+                    </ul>
+
+                </nav>
+
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <form action="">
+            <label for="nomeSobrenome">Nome e Sobrenome</label>
+            <input type="text" id="nomeSobrenome" class="input-padrao" required>
+
+            <label for="email">E-mail</label>
+            <input type="email" id="email" class="input-padrao" required placeholder="seuemail@dominio.com">
+
+            <label for="telefone">Telefone</label>
+            <input type="tel" id="telefone" class="input-padrao" required placeholder="(xx)99999-9999">
+
+            <label for="mensagem">Mensagem</label>
+            <textarea name="" id="mensagem" cols="40" rows="10" class="input-padrao"></textarea>
+
+            <fieldset>
+
+                <legend>Como prefere o nosso contato?</legend>
+
+                <label for="radio-email"> <input type="radio" name="contato" id="radio-email">E-mail</label>
+
+
+                <label for="radio-telefone"><input type="radio" name="contato" id="radio-telefone">Telefone</label>
+
+
+                <label for="radio-whatsapp"><input type="radio" name="contato" id="radio-whatsapp" checked>
+                    Whatsapp</label>
+            </fieldset>
+
+            <label for="box"><input type="checkbox" name="" id="box"> Gostaria de receber a nossa novidade por
+                e-mail?</label>
+            
+            <input type="submit" value="Enviar formulario" class="enviar"onclick="EnviarFormularioJs();" />
+
+        </form>
+    </main>
+
+    <footer>
+        <div class="footer_div">
+            <img src="logo circulo contornada.png" alt=" logo-branco" width="15%">
+            <p class="copy">&copy; Copyright - 2024 Mulheres sem Rótulo. Todos os direitos reservados</p>
+        </div>
+    </footer>
+
+    <script src="JsContatos.js"></script>
+</body>
+
+</html>
